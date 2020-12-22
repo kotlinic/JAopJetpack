@@ -1,0 +1,55 @@
+ext {
+
+    android = [
+            compileSdkVersion: 28,
+            minSdkVersion    : 21,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : "1.1",
+    ]
+
+
+    libsVersion = [
+            butterknife_version = "10.0.0",
+            retrofit_version = "2.6.1",
+            lifecycle_version = "2.2.0",
+    ]
+    dependencies = [
+            appcompat             : "androidx.appcompat:appcompat:1.0.0",
+            arouterApi            : "com.alibaba:arouter-api:1.5.0",
+            arouterCompiler       : "com.alibaba:arouter-compiler:1.2.2",
+            butterknife           : "com.jakewharton:butterknife:$rootProject.butterknife_version",
+            butterknifeCompiler   : "com.jakewharton:butterknife-compiler:$rootProject.butterknife_version",
+            /*rxJava + retrofit -----start*/
+            retrofitConvertGson   : "com.squareup.retrofit2:converter-gson:$rootProject.retrofit_version",
+            retrofitConvertScalars: "com.squareup.retrofit2:converter-scalars:$rootProject.retrofit_version",
+            retrofit              : "com.squareup.retrofit2:retrofit:$rootProject.retrofit_version",
+            retrofitAdapterRxJava2: "com.squareup.retrofit2:adapter-rxjava2:$rootProject.retrofit_version",
+            rxJava                : "io.reactivex.rxjava2:rxjava:2.2.11",
+            rxAndroid             : "io.reactivex.rxjava2:rxandroid:2.1.1",
+            okhttp                : "com.squareup.okhttp3:okhttp:4.0.0",
+            /*rxJava + retrofit -----end*/
+
+            fastJson              : "com.alibaba:fastjson:1.2.48",
+
+
+            viewModel             : "androidx.lifecycle:lifecycle-extensions:$rootProject.lifecycle_version",
+            /*room 数据库 ---start*/
+            room                  : "androidx.room:room-runtime:$rootProject.lifecycle_version",
+            roomCompiler          : "androidx.room:room-compiler:$rootProject.lifecycle_version",
+            /*room 数据库 ---end*/
+            /*navigation --start*/
+            navigation            : "androidx.navigation:navigation-fragment:$rootProject.lifecycle_version",
+            navigationUI          : "androidx.navigation:navigation-ui:$rootProject.lifecycle_version",
+            /*navigation --end*/
+            work                  : "androidx.work:work-runtime:$rootProject.lifecycle_version",
+
+            swipebacklayout       : "me.imid.swipebacklayout.lib:library:1.1.0",
+            rxpermissions         : "com.github.tbruyelle:rxpermissions:0.10.2",
+            websocket             : "com.neovisionaries:nv-websocket-client:2.7",
+            slidingpanellayout    : "androidx.slidingpanelayout:slidingpanelayout:1.1.0",
+            mmkv                  : "com.tencent:mmkv-static:1.2.2",
+            glide                 : "com.github.bumptech.glide:glide:4.9.0",
+    ]
+
+}

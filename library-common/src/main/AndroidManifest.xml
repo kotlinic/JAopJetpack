@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zlx.library_common">
+
+    /
+    <application>
+        <provider
+            android:name=".provier.AppContentProvider"
+            android:authorities="${applicationId}.wanandroid.appcontentprovider"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+</manifest>
